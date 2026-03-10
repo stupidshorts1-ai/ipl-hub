@@ -19,28 +19,18 @@
 
             p, li {
                 text-align: center;
-            }
-
-            ul {
-            list-style: none;
-            padding-left: 0; 
-            margin-left: 0;
-            }
-
-            .temple-headings {
-                font-family: 'Lora', serif;
-                font-size: 28px;
-                font-weight: bold;
-                font-style: italic;
-            }
-
-            .temple-headings p {
                 font-family: 'PT Serif', serif;
                 font-weight: bold;
                 font-size: 20px;
                 font-style: normal;
                 padding-inline: 20px;
                 padding-block: 0;
+            }
+
+            ul {
+            list-style: none;
+            padding-left: 0; 
+            margin-left: 0;
             }
 			
             a {
@@ -113,7 +103,7 @@
                 background-color: #1E90FF;
                 margin: 20px;
                 border-radius: 16px;
-                box-shadow: 0 10px 25px rgba(214, 170, 28, 0.75);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 1);
                 margin-bottom: 40px;
             }
 
@@ -245,6 +235,73 @@
                     transform: translateY(0);
                 }
 }
+
+           /* ================= TEAM SETTINGS ================= */
+
+           .csk {
+                color: #F9CD05;
+            }
+
+            .mi {
+                color: #004BA0;
+            }
+
+            .kkr {
+                color: #3A225D;
+            }
+
+            .rcb {
+                color: #EC1C24;
+            }
+
+            .gt {
+                color: #1C2C5B;
+            }
+
+            .srh {
+                color: #FF6A00;
+            }
+            
+            .rr {
+                color: #EA1A85;
+            }
+
+            .decc {
+                color: #1C4E9B;
+            }
+
+            .pbks {
+                color: #ED1C24;
+            }
+
+            .lsg {
+                color: #F26C2A;
+            }
+
+            .delc {
+                color: #17489E;
+            }
+
+            .ktk {
+                color: #6A1B9A;
+            }
+
+            .pwi {
+                color: #005BAC;
+            }
+
+            .rps {
+                color: #5B2C83;
+            }
+
+            .gl {
+                color: #F26522;
+            }
+
+            .csk {
+                color: #F9CD05;
+            }
+
 
             /* ================= FOOTER ================= */
 
