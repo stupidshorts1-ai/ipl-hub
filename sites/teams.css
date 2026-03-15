@@ -1,0 +1,212 @@
+/* ================= BODY ================= */
+
+        html {
+            min-height: 100%;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #0A1F44;
+            background-attachment: fixed;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cinzel', serif;
+            text-align: center;
+        }
+
+        p, li {
+            text-align: center;
+            font-family: 'PT Serif', serif;
+            font-weight: bold;
+            font-size: 20px;
+            font-style: normal;
+            padding-inline: 20px;
+            padding-block: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        a {
+            color: inherit;
+        }
+
+/* ================= IMAGES ================= */
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .img-desc {
+            font-family: 'Lora', sans-serif;
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .img-pair {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            margin: 32px auto;
+            max-width: 1200px;
+        }
+
+        .img-pair img {
+            max-width: 48%;
+            height: auto;
+            display: block;
+        }
+
+        .h-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            margin: 32px auto;
+            max-width: 1200px;
+        }
+
+        .h-img img {
+            width: 75%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .v-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            margin: 32px auto;
+        }
+
+        .v-img img {
+            height: 700px;
+            width: auto;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+/* ================= TEAM COLOUR ================= */
+
+        :root {
+            --team-color: #000000;
+        }
+
+/* ================= HEADER ================= */
+
+        .site-header {
+            background-color: var(--team-color);
+            margin: 20px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 1);
+            margin-bottom: 40px;
+        }
+
+        .header-inner {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+            padding: 0 24px;
+        }
+
+        .header-text {
+            text-align: center;
+            justify-self: center;
+            max-width: 700px;
+        }
+
+        .header-spacer {
+            width: 48px;
+        }
+
+        .logo-link {
+            display: inline-block;
+            text-decoration: none;
+            justify-self: start;
+        }
+
+        .logo-img {
+            height: 150px;
+            width: auto;
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .logo-link:hover,
+        .logo-link:focus,
+        .logo-link:active {
+            text-decoration: none;
+            outline: none;
+        }
+
+        .header-text h1 {
+            margin: 0;
+            font-family: 'Cinzel', serif;
+            color: #ffffff;
+            font-size: 40px;
+        }
+
+        .header-text p {
+            margin: 4px 0 0;
+            font-family: 'Cinzel', serif;
+            color: #ffffff;
+            font-size: 32px;
+        }
+
+/* ================= FOOTER ================= */
+
+        .site-footer {
+            background-color: var(--team-color);
+            margin: 20px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.75);
+            margin-top: 40px;
+        }
+
+        .footer-text {
+            text-align: center;
+            justify-self: center;
+        }
+
+        .footer-spacer {
+            width: 48px;
+        }
+
+        .footer-text h1 {
+            margin: 0;
+            font-family: 'Cinzel', serif;
+            color: #ffffff;
+            font-size: 40px;
+        }
+
+        .footer-text p {
+            margin: 4px 0 0;
+            font-family: 'Cinzel', serif;
+            color: #ffffff;
+            font-size: 20px;
+            max-width: 1400px;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+
+/* ================= ANIMATION ================= */
+
+        @media (prefers-reduced-motion: reduce) {
+            .main-table tbody tr {
+                opacity: 1;
+                transform: none;
+                animation: none;
+            }
+        }

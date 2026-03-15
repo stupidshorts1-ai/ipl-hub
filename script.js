@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const rows = table.querySelectorAll("tbody tr");
 
         rows.forEach((row, index) => {
+
+            // SCROLL ANIMATION
             const rowObserver = new IntersectionObserver(
                 (entries, obs) => {
                     entries.forEach(entry => {
@@ -23,28 +25,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 { threshold: 0.3 }
             );
             rowObserver.observe(row);
-        });
 
-        rows.forEach(row => {
+            // CLICK + KEYBOARD NAV
             const link = row.getAttribute("data-link");
-
             if (link) {
-                row.style.cursor = "pointer";
                 row.setAttribute("tabindex", "0");
-
-                row.addEventListener("click", () => {
-                    window.location.href = link;
-                });
-
+                row.addEventListener("click", () => window.location.href = link);
                 row.addEventListener("keydown", (e) => {
-                    if (e.key === "Enter") {
-                        window.location.href = link;
-                    }
+                    if (e.key === "Enter") window.location.href = link;
                 });
             }
+
         });
     }
-
-
 
 });
